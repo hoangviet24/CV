@@ -1,0 +1,124 @@
+body{
+    font-family: Roboto;
+    transition: background-color 0.5s, color 0.5s;
+}
+html{
+    font-size: 100%;
+}
+:root{
+    --background-black: rgb(45, 52, 54);
+    --background-white: rgb(223, 230, 233);
+    --background-slide-black: rgb(44, 62, 80);
+    --background-slide-white: rgb(241, 243, 244);
+}
+body {
+    background-color: var(--background-black);
+    color: var(--background-black);
+  }
+@media (prefers-color-scheme: dark) {
+    
+    .title{
+        color: #fff;
+    }
+    .wrap {
+      background-color: rgb(34, 47, 62);
+      color: #333;
+    } 
+
+    .slide1{
+        background-color: var(--background-slide-white);
+        color: var(--background-slide-black);
+    }
+    .skill{
+        background-color: var(--background-slide-white);
+        color: var(--background-slide-black);
+    }
+    .slide2{
+        background-color: var(--background-slide-black);
+        color: var(--background-slide-white);
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .wrap {
+      background-color: var(--background-white);
+      color: #fff;
+    }
+    .title{
+        color: var(--background-black);
+    }
+    .slide1{
+        background-color: var(--background-slide-black);
+        color: #fff;
+    }
+    .skill{
+        background-color: var(--background-slide-black);
+        color: #fff;
+    }
+    .slide2{
+        background-color: var(--background-slide-white);
+        color: #fff;
+    }
+  }
+  @media screen and (max-width: 926px) {
+    .main{
+        flex-direction: column;
+    }
+    ul{
+        text-align: center;
+    }
+    ul li{
+        list-style-type: none;
+    }
+    .skill-title{
+        text-align: center;
+    }
+  }
+  @media screen and (min-width: 890px) {
+    .slide1{
+        margin: 0 0 1rem 1rem;
+    }
+    .slide2{
+        margin: 0 1rem 1rem 0 ;
+    }
+  }
+.wrap{
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.title{
+    text-align: center;
+}
+.main{
+    display: flex;
+}
+.slide1{
+    padding: 1rem;
+    flex: 30%;
+}
+
+.slide2{
+    padding: 1rem;
+    flex: 70%;
+}
+.avatar{
+    border-radius: 1rem;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+ul{
+    list-style-type: "- ";
+    padding: 0 0 0 1rem;
+}
+li{
+    margin-bottom: 5px;
+}
+.Myself p{
+    font-size: 1.3rem;
+}
+.info li i{
+    padding-right: 10px;
+    font-size: 1rem;
+}
