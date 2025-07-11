@@ -5,6 +5,30 @@ body{
 html{
     font-size: 100%;
 }
+a {
+  color: #7ec7ff; /* xanh nhạt, dễ nhìn trên cả nền sáng/tối */
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #b2e0ff; /* xanh nhạt hơn khi hover */
+}
+
+/* Nếu muốn link nổi bật hơn trên nền tối */
+body.dark-mode a {
+  color: #7ec7ff;
+}
+body.dark-mode a:hover {
+  color: #b2e0ff;
+}
+
+/* Nếu muốn link nổi bật hơn trên nền sáng */
+body:not(.dark-mode) a {
+  color: #1976d2;
+}
+body:not(.dark-mode) a:hover {
+  color: #4e54c8;
+}
 :root{
     --background-black: rgb(45, 52, 54);
     --background-white: rgb(223, 230, 233);
