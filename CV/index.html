@@ -12,11 +12,14 @@
   <title>CV - Curriculum Vitae</title>
   <script src="script.js"></script>
 </head>
-<body>
+<body class = "dark-mode">
   <div class="wrap">
-    <h1 class ="title">
+    <h1 class="title">
       Thông tin của tôi
     </h1>
+    <button id="toggle-theme" style="position: absolute; top: 20px; right: 20px; padding: 10px 16px; border-radius: 50%; border: none; background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%); color: #fff; cursor: pointer; box-shadow: 0 2px 8px rgba(78,84,200,0.2); font-size: 1.2rem;">
+      <i class="fa-solid fa-moon"></i>
+    </button>
     <div class="main">
       <div class="slide1">
         <div class="Myself">
@@ -25,10 +28,10 @@
         </div>
         <hr>
         <ul class ="info" style="list-style-type: none;font-size: 0.8rem">
-          <li><i class="fa-solid fa-calendar"></i><span style="font-weight: bold;">27/06/2001</span></li>
+          <li><i class="fa-solid fa-calendar"></i><span style="font-weight: bold;">28/01/2004</span></li>
           <li><i class="fa-solid fa-phone"></i><span style="font-weight: bold;">0888823469</span></li>
           <li><i class="fa-solid fa-envelope"></i><span style="font-weight: bold;">hoangvietdoican2004@gmail.com</span></li>
-          <li><i class="fa-solid fa-location-dot"></i><span style="font-weight: bold;">Chung Cư B1 Đường Nguyễn Hoàng</span></li>
+          <li><i class="fa-solid fa-location-dot"></i><span style="font-weight: bold;">Blao Lâm Đồng</span></li>
           <li><i class="fa-solid fa-globe"></i><span><span style="font-weight: bold;">Website: </span><a href="https://www.facebook.com/hoangviet.vo.751/">Facebook</a></span></li>
         </ul>
       
@@ -36,9 +39,9 @@
         <div class="skill">
           <p class ="skill-title" style="font-weight: bold;" >Kỹ năng cứng</p>
           <ul>
-            <li>C++,C#,Python</li>
-            <li>ASP.NET,Flutter</li>
-            <li>SQL,NoSQL,Sqlite</li>
+            <li>C#,Python</li>
+            <li>ASP.NET</li>
+            <li>SQL</li>
           </ul>
           <p class ="skill-title" style="font-weight: bold;">Kỹ năng mềm</p>
           <ul>
@@ -47,17 +50,33 @@
             <li>Có kỹ năng xử lý các vấn đề phát sinh</li>
             <li>Có kỹ năng quản lý thời gian và đáp ứng đúng thời hạn</li>
           </ul>
-          <p class ="skill-title" style="font-weight: bold;">Kỹ năng chuyên môn</p>
+          <!-- <p class ="skill-title" style="font-weight: bold;">Kỹ năng chuyên môn</p>
           <ul>
             <li>Phát triển game:Egine Godot,GDScript,C#</li>
             <li>Phát triển ứng dụng mobile:Flutter</li>
             <li>Phát triển Web: HTML,CSS,.Net</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
       <div class="slide2">
-    </div>
-    
+        <div class="education">
+          <h2 class="title-education">Học vấn</h2>
+          <ul>
+            <li><span style="font-weight: bold;">Trường Đại học Yersin Đà Lạt</span> (2022 - 2025)</li>
+            <li><span style="font-weight: bold;">Điểm số: 3.1/4.0</span></li>
+          </ul>
+        </div>
+        <hr>
+        <div class="experience">
+          <h2 class="title-experience">Kinh nghiệm làm việc</h2>
+          <ul>
+            <li><span style="font-weight: bold;">Thực tập sinh tại Công ty TMA Bình Định</span> (02/2025 - 05/2025)</li>
+            <li><span style="font-weight: bold;">Thành viên nhóm phát triển dự án tại Công ty TMA Bình Định</span> (02/2025 - 05/2025)</li>
+            <li><span style="font-weight: bold;">Nghiên cứu bài báo khoa học về nhận diện cảm xúc qua giọng nói bằng mô hình Transformer</span> (05/2025 - 07/2025)</li>
+
+          </ul>
+        </div>
+      </div>
   </div>
  
 </body>

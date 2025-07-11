@@ -15,6 +15,27 @@ body {
     background-color: var(--background-black);
     color: var(--background-black);
   }
+  body.dark-mode {
+    background-color: var(--background-black);
+    color: #fff;
+}
+
+body.dark-mode .wrap {
+    background-color: rgb(34, 47, 62);
+    color: #fff;
+}
+body.dark-mode .title {
+    color: #fff;
+}
+body.dark-mode .slide1,
+body.dark-mode .skill {
+    background-color: var(--background-slide-black);
+    color: #fff;
+}
+body.dark-mode .slide2 {
+    background-color: var(--background-slide-white);
+    color: var(--background-slide-black);
+}
 @media (prefers-color-scheme: dark) {
     
     .title{
